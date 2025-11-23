@@ -17,7 +17,7 @@ export function Mascot({ state = "idle", className = "" }: MascotProps) {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       },
     },
     thinking: {
@@ -25,7 +25,7 @@ export function Mascot({ state = "idle", className = "" }: MascotProps) {
       transition: {
         duration: 1.5,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       },
     },
     success: {
@@ -33,14 +33,14 @@ export function Mascot({ state = "idle", className = "" }: MascotProps) {
       rotate: [0, 360, 360],
       transition: {
         duration: 0.8,
-        ease: "backOut",
+        ease: "backOut" as const,
       },
     },
     error: {
       x: [0, -10, 10, -10, 10, 0],
       transition: {
         duration: 0.5,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       },
     },
   };
