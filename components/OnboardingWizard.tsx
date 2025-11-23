@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Check, Rocket, Brain, Zap, Code, Terminal, ArrowRight } from "lucide-react";
-import Mascot from "./Mascot";
+import { Mascot } from "./Mascot";
 
 type OnboardingStep = "mascot" | "goal" | "level" | "loading" | "complete";
 
