@@ -1,0 +1,345 @@
+{
+  "topic": "greedy",
+  "total_lessons": 4,
+  "total_xp": 400,
+  "lessons": [
+    {
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "description": "The problem is asking for the maximum profit that can be made by buying and selling a stock. The key to solving this problem is to find the minimum price to buy and the maximum price to sell.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "The problem is asking for the maximum profit that can be made by buying and selling a stock. The key to solving this problem is to find the minimum price to buy and the maximum price to sell.",
+          "keyPoints": [
+            "The problem is asking for the maximum profit that can be made by buying and selling a stock. The key to solving this problem is to find the minimum price to buy and the maximum price to sell."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "5,7",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "jump-game",
+      "title": "Jump Game",
+      "description": "Jump Game",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "",
+          "keyPoints": [],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "3,1,0,0,1",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gas-station",
+      "title": "Gas Station",
+      "description": "Resetting the start index",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Resetting the start index\n\nIf there is more gas along the route than the cost of the route, then there is guaranteed to be a solution to the problem. So the first step is to check if the sum of the gas is greater than or equal to the sum of the cost. If it is not, then we return -1.\n\nIf we follow this approach of resetting the start index and gas tank whenever we don't have enough gas to reach the next station, then when we finish iterating, the last start index will be the solution to the problem.",
+          "keyPoints": [],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0",
+                "pointers": {
+                  "i": "2"
+                }
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "0",
+                "pointers": {
+                  "i": "2"
+                }
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "2,5",
+                "pointers": {
+                  "i": "2"
+                }
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "1",
+                "pointers": {
+                  "i": "2"
+                }
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1",
+                "pointers": {
+                  "i": "2"
+                }
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "greeds = [1, 2, 3]\\ncookies = [1, 1]\\n",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "greeds = [1, 2, 3]\\ncookies = [1, 1]\\n\n\nThe first child with a greed of 1 can be satisfied with the first cookie of size 1.\\nThe second cookie of size 1 cannot satisfy the second child with a greed of 2.\\nTherefore, only one child can be satisfied.\n\nIn this case, after sorting the arrays, the locally optimal (or \\\n\nWhat Makes this a Greedy Algorithm?\n\nGreedy Choice Property",
+          "keyPoints": [
+            "greeds = [1, 2, 3]\\ncookies = [1, 1]\\n",
+            "In this case, after sorting the arrays, the locally optimal (or \\",
+            "What Makes this a Greedy Algorithm?",
+            "You are given two integer arrays:",
+            "There are a few characteristics of this algorithm that make it a greedy algorithm:"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1, 2, 3",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1, 1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "10, 13, 2, 5, 3, 7, 101, 18",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "2, 3, 7, 101",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

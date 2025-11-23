@@ -1,0 +1,352 @@
+{
+  "topic": "backtracking",
+  "total_lessons": 6,
+  "total_xp": 600,
+  "lessons": [
+    {
+      "id": "combination-sum",
+      "title": "Combination Sum",
+      "description": "Recursively exploring all combinations",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Recursively exploring all combinations\n\nFor the backtracking step, we remove the last number from the current combination and try the next candidate. This process continues until we have tried all the candidates.",
+          "keyPoints": [
+            "Recursively exploring all combinations",
+            "For the backtracking step, we remove the last number from the current combination and try the next candidate. This process continues until we have tried all the candidates."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1,12",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "12,15",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "The algorithm starts with \\",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "The algorithm starts with \\\n\nThis problem is a good backtracking candidate because it requires exploring all root-to-leaf paths to see if they sum to the given target.\n\nGiven a binary tree where all nodes have positive, integer values and a target sum, find all root-to-leaf paths where the sum of the values along the path equals the given sum.\n\nLet's now look at an example of how to use Depth-First Search to solve backtracking problems.\n\nIt finds a solution for the problem by exploring all possible paths.",
+          "keyPoints": [
+            "This problem is a good backtracking candidate because it requires exploring all root-to-leaf paths to see if they sum to the given target.",
+            "Given a binary tree where all nodes have positive, integer values and a target sum, find all root-to-leaf paths where the sum of the values along the path equals the given sum.",
+            "Let's now look at an example of how to use Depth-First Search to solve backtracking problems.",
+            "It finds a solution for the problem by exploring all possible paths.",
+            "This example demonstrates key characteristics of backtracking algorithms:"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "8,12",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "15,19",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "generate-parentheses",
+      "title": "Generate Parentheses",
+      "description": "Generate Parentheses",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "",
+          "keyPoints": [],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "word-search",
+      "title": "Word Search",
+      "description": "Word Search",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "",
+          "keyPoints": [],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "subsets",
+      "title": "Subsets",
+      "description": "Step 1 (first element)",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Step 1 (first element)\n\nStep 3 (third element)\n\nThe solution set must not contain duplicate subsets, and the subsets can be returned in any order.\n\nThis gives us two possible subsets:\n\n[[], [1], [2], [1, 2]]",
+          "keyPoints": [
+            "The solution set must not contain duplicate subsets, and the subsets can be returned in any order.",
+            "This gives us two possible subsets:",
+            "Let's start by figuring out how to incrementally generate all possible subsets of a given set, starting from an empty set. Doing so will help us visualize the \\"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1, 2, 3",
+                "pointers": {
+                  "index": "2"
+                }
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1",
+                "pointers": {
+                  "index": "2"
+                }
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "1",
+                "pointers": {
+                  "index": "2"
+                }
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "1",
+                "pointers": {
+                  "index": "2"
+                }
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "2",
+                "pointers": {
+                  "index": "2"
+                }
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "solution-space-trees",
+      "title": "Solution Space Trees",
+      "description": "The total number of nodes is 1 + 4 + 4Â² + ... + 4â¿, which is asymptotically O(4â¿).",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "The total number of nodes is 1 + 4 + 4Â² + ... + 4â¿, which is asymptotically O(4â¿).\n\nDefining the Recursive Function\n\nFinally, in the main function, we kick off the call to our recursive function with the empty string and the index 0 (the root node of our tree).\n\nNow that we can visualize the \\\n\nSo how do we do so without an explicit tree to traverse? Let's break it down.",
+          "keyPoints": [
+            "The total number of nodes is 1 + 4 + 4Â² + ... + 4â¿, which is asymptotically O(4â¿).",
+            "Defining the Recursive Function",
+            "Finally, in the main function, we kick off the call to our recursive function with the empty string and the index 0 (the root node of our tree).",
+            "Now that we can visualize the \\",
+            "So how do we do so without an explicit tree to traverse? Let's break it down."
+          ],
+          "codeExample": null
+        }
+      }
+    }
+  ]
+}

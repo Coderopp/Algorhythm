@@ -1,0 +1,304 @@
+{
+  "topic": "prefix-sum",
+  "total_lessons": 3,
+  "total_xp": 300,
+  "lessons": [
+    {
+      "id": "subarray-sum-equals-k",
+      "title": "Subarray Sum Equals K",
+      "description": "Counting Subarrays with Sum K",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Counting Subarrays with Sum K\n\nprefix[i] = arr[0] + arr[1] + ... + arr[i - 1]\n\nLet's start by visualizing the role that the prefix sum plays in this solving this problem. Let's say I have the following array:\n\n{ -2:1, 0:1, 1:1, 2:2, 4:1, 7: 1 }\n\nWe'll use this fact to solve our problem.",
+          "keyPoints": [
+            "prefix[i] = arr[0] + arr[1] + ... + arr[i - 1]",
+            "Let's start by visualizing the role that the prefix sum plays in this solving this problem. Let's say I have the following array:",
+            "{ -2:1, 0:1, 1:1, 2:2, 4:1, 7: 1 }",
+            "We'll use this fact to solve our problem."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "2",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "count-vowels-in-substrings",
+      "title": "Count Vowels in Substrings",
+      "description": "prefix_sum[right + 1] - prefix_sum[left]",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "prefix_sum[right + 1] - prefix_sum[left]\n\n[left, right] = [1, 4]",
+          "keyPoints": [
+            "prefix_sum[right + 1] - prefix_sum[left]"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1, 4",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "And we want to find the sum of this subarray between index 3 and 5 (inclusive):",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "And we want to find the sum of this subarray between index 3 and 5 (inclusive):\n\nUsing the prefix sum array to calculate the sum of arr[2:4] (inclusive)\n\n8 = arr[0] + arr[1] + arr[2]\\n21 = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5]\n\nCalculating Prefix Sums\n\narr[2:4] = prefix[5] - prefix[2]",
+          "keyPoints": [
+            "And we want to find the sum of this subarray between index 3 and 5 (inclusive):",
+            "Using the prefix sum array to calculate the sum of arr[2:4] (inclusive)",
+            "8 = arr[0] + arr[1] + arr[2]\\n21 = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5]",
+            "arr[2:4] = prefix[5] - prefix[2]",
+            "Let's say we have the following array:"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "2",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,744 @@
+{
+  "topic": "linked-list",
+  "total_lessons": 6,
+  "total_xp": 600,
+  "lessons": [
+    {
+      "id": "reorder-list",
+      "title": "Reorder List",
+      "description": "5 -> 1 -> 4 -> 2 -> 3",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "5 -> 1 -> 4 -> 2 -> 3\n\nThe first observation is that we can create our final list by merging two smaller lists: the first half of the original list and the reversed second half of the original list.\n\nPut together, the solution involves three steps, each of which involve 3 fairly common linked list operations:\n\nfast and slow pointers\n\n5 -> 4 -> 3 -> -> 2 -> 1",
+          "keyPoints": [
+            "The first observation is that we can create our final list by merging two smaller lists: the first half of the original list and the reversed second half of the original list.",
+            "Put together, the solution involves three steps, each of which involve 3 fairly common linked list operations:",
+            "Above: The first half of the original list",
+            "Below: The reversed second half of the original list",
+            "Reversing the nodes between the middle and the end of the linked list."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0,1,2",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "0,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "1,4",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "1,4",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "5,4,4,3",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "description": "2. Optimal Solution: Fast and Slow Pointers",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "2. Optimal Solution: Fast and Slow Pointers\n\nfast and slow pointers\n\nWe recommend taking some time to solve the problem on your own before reading the solutions below.\n\nWhen the list contains a cycle, fast and slow eventually meet at the same node.\n\nOne approach to this problem is to keep a set of visited nodes while iterating through the linked list. At each node, we check if the node exists in the set. If it does, then the linked list contains a cycle. If it doesn't, we add the node to the set and move to the next node. If we reach the end of the linked list without encountering a node in the dictionary, then the linked list does not contain a cycle.",
+          "keyPoints": [
+            "2. Optimal Solution: Fast and Slow Pointers",
+            "We recommend taking some time to solve the problem on your own before reading the solutions below.",
+            "When the list contains a cycle, fast and slow eventually meet at the same node."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "5,4,3,2,0",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1,6",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,4,3,2,0",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "1,6",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "5,4,3,0",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "swap-nodes-in-pairs",
+      "title": "Swap Nodes in Pairs",
+      "description": "We then perform the same 3 operations we discussed earlier to swap the pair of nodes:",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "We then perform the same 3 operations we discussed earlier to swap the pair of nodes:\n\nWe need to perform 3 operations:\n\nOnce that is complete, we can move to the next pair of nodes to swap.\n\nNeed for a Dummy Node\n\nHere's the complete dummy node approach that elegantly handles all edge cases:",
+          "keyPoints": [
+            "We then perform the same 3 operations we discussed earlier to swap the pair of nodes:",
+            "We need to perform 3 operations:",
+            "Once that is complete, we can move to the next pair of nodes to swap.",
+            "Here's the complete dummy node approach that elegantly handles all edge cases:",
+            "Since we can't modify the values in the nodes, our function needs to swap the nodes by traversing the list and updating the next pointers of the nodes."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "Traversing a Linked List",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Traversing a Linked List\n\nVisualizing a linked list with 4 nodes.\n\nThis page covers common operations and strategies that frequently show up in linked list problems for the coding interview.\n\nTraversing a linked list to find its length.\n\nThese operations demonstrate some of the fundamentals of working with linked lists.",
+          "keyPoints": [
+            "Visualizing a linked list with 4 nodes.",
+            "This page covers common operations and strategies that frequently show up in linked list problems for the coding interview.",
+            "Traversing a linked list to find its length.",
+            "These operations demonstrate some of the fundamentals of working with linked lists.",
+            "A linked list is a data structure consisting of sequence of a nodes, where each node contains a value and reference to the next node in the sequence."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1,2,3,4",
+                "pointers": {
+                  "i": "3"
+                }
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {
+                  "i": "3"
+                }
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,4,3,2",
+                "pointers": {
+                  "i": "3"
+                }
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0,2",
+                "pointers": {
+                  "i": "3"
+                }
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1,7",
+                "pointers": {
+                  "i": "3"
+                }
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "palindrome-linked-list",
+      "title": "Palindrome Linked List",
+      "description": "Like the previous solution, we first traverse the linked list and store the value of each node in a list.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Like the previous solution, we first traverse the linked list and store the value of each node in a list.\n\n1. Convert to List: Compare Reverse\n\nWe recommend taking some time to solve the problem on your own before reading the solutions below.\n\nInstead of comparing the entire list with its reverse, we can use the two-pointer technique to check if the values in the list are a palindrome.\n\n2. Convert to List: Two-Pointer Technique",
+          "keyPoints": [
+            "Like the previous solution, we first traverse the linked list and store the value of each node in a list.",
+            "1. Convert to List: Compare Reverse",
+            "We recommend taking some time to solve the problem on your own before reading the solutions below.",
+            "Instead of comparing the entire list with its reverse, we can use the two-pointer technique to check if the values in the list are a palindrome.",
+            "2. Convert to List: Two-Pointer Technique"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1,4",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "1,4",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,4,4,3",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "3,14",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "13,19",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "remove-nth-node-from-end-of-list",
+      "title": "Remove Nth Node From End of List",
+      "description": "current.next = current.next.next",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "current.next = current.next.next\n\nIntroducing a dummy node\n\nIn the two above approaches, we need special logic to handle removing the head node because the head node does not have a node right before it to locate.",
+          "keyPoints": [
+            "current.next = current.next.next",
+            "In the two above approaches, we need special logic to handle removing the head node because the head node does not have a node right before it to locate."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "5, 4, 3, 2, 1",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,4,3,2,1",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1,8",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

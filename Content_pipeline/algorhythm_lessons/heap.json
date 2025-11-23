@@ -1,0 +1,461 @@
+{
+  "topic": "heap",
+  "total_lessons": 5,
+  "total_xp": 500,
+  "lessons": [
+    {
+      "id": "find-k-closest-elements",
+      "title": "Find K Closest Elements",
+      "description": "Kth Largest Element in an Array",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Kth Largest Element in an Array\n\nnegative of the distance\n\nBonus Approach: Two Pointers + Binary Search",
+          "keyPoints": [
+            "Kth Largest Element in an Array",
+            "Bonus Approach: Two Pointers + Binary Search"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1,8",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "8,10",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "11,13",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1,3",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element in an Array",
+      "description": "Kth Largest Element in an Array",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "",
+          "keyPoints": [],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "merge-k-sorted-lists",
+      "title": "Merge K Sorted Lists",
+      "description": "Step 2: Build the merged list",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Step 2: Build the merged list\n\nWhen the heap is empty, all the elements from the linked lists have been merged, and we can return the merged list.\n\nStep 1: Initialize the heap",
+          "keyPoints": [
+            "When the heap is empty, all the elements from the linked lists have been merged, and we can return the merged list."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1,5",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "4,6",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "5,7",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "6,8",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "18,20",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "k-closest-points-to-origin",
+      "title": "K Closest Points to Origin",
+      "description": "Kth Largest Element in an Array",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Kth Largest Element in an Array\n\nReturn the k closest points in any order.\n\nnegative of the distance",
+          "keyPoints": [
+            "Kth Largest Element in an Array",
+            "Return the k closest points in any order."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1,8",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "7,10",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "10,12",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "[1, 2, 4, 5, 8, 6, 9]",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "[1, 2, 4, 5, 8, 6, 9]\n\nIf we remove the smallest value from the heap, the elements of the array efficiently re-arrange so that the next smallest value takes its place at the front of the array.\n\nWe can think of a heap as an array with a special property: the smallest value in the array is always in the first index of the array.\n\nThis module prepares you to use heaps during the coding interview by covering:\n\nThe types of coding interview questions that are best solved using heaps.",
+          "keyPoints": [
+            "If we remove the smallest value from the heap, the elements of the array efficiently re-arrange so that the next smallest value takes its place at the front of the array.",
+            "We can think of a heap as an array with a special property: the smallest value in the array is always in the first index of the array.",
+            "This module prepares you to use heaps during the coding interview by covering:",
+            "The types of coding interview questions that are best solved using heaps.",
+            "How heaps are able to achieve their special property efficiently, which enable you to discuss heaps effectively during the interview."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1, 2, 4, 5, 8, 6, 9",
+                "pointers": {
+                  "i": "4"
+                }
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "8, 7, 9",
+                "pointers": {
+                  "i": "4"
+                }
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "7, 9, 8",
+                "pointers": {
+                  "i": "4"
+                }
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "9, 7, 8",
+                "pointers": {
+                  "i": "4"
+                }
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

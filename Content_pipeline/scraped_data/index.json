@@ -1,0 +1,76 @@
+{
+  "source": "https://www.hellointerview.com/learn/code",
+  "scraped_at": "2025-11-23 17:56:49",
+  "total_topics": 17,
+  "total_lessons": 106,
+  "topics": {
+    "stack": {
+      "lesson_count": 7,
+      "file": "stack.json"
+    },
+    "depth-first-search": {
+      "lesson_count": 21,
+      "file": "depth-first-search.json"
+    },
+    "breadth-first-search": {
+      "lesson_count": 11,
+      "file": "breadth-first-search.json"
+    },
+    "dynamic-programming": {
+      "lesson_count": 9,
+      "file": "dynamic-programming.json"
+    },
+    "matrices": {
+      "lesson_count": 3,
+      "file": "matrices.json"
+    },
+    "backtracking": {
+      "lesson_count": 6,
+      "file": "backtracking.json"
+    },
+    "intervals": {
+      "lesson_count": 6,
+      "file": "intervals.json"
+    },
+    "heap": {
+      "lesson_count": 5,
+      "file": "heap.json"
+    },
+    "linked-list": {
+      "lesson_count": 6,
+      "file": "linked-list.json"
+    },
+    "prefix-sum": {
+      "lesson_count": 3,
+      "file": "prefix-sum.json"
+    },
+    "two-pointers": {
+      "lesson_count": 8,
+      "file": "two-pointers.json"
+    },
+    "sliding-window": {
+      "lesson_count": 7,
+      "file": "sliding-window.json"
+    },
+    "greedy": {
+      "lesson_count": 4,
+      "file": "greedy.json"
+    },
+    "graphs": {
+      "lesson_count": 3,
+      "file": "graphs.json"
+    },
+    "binary-search": {
+      "lesson_count": 3,
+      "file": "binary-search.json"
+    },
+    "trie": {
+      "lesson_count": 3,
+      "file": "trie.json"
+    },
+    "learn": {
+      "lesson_count": 1,
+      "file": "learn.json"
+    }
+  }
+}

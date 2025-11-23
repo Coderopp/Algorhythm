@@ -1,0 +1,416 @@
+{
+  "topic": "stack",
+  "total_lessons": 7,
+  "total_xp": 700,
+  "lessons": [
+    {
+      "id": "longest-valid-parentheses",
+      "title": "Longest Valid Parentheses",
+      "description": "Index 1, '(':\\nPush index 1 onto the stack.\\nStack: [-1, 0, 1]",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Index 1, '(':\\nPush index 1 onto the stack.\\nStack: [-1, 0, 1]\n\nInitialization: Stack: [-1]\n\nSolution Visualization\n\nIndex 0, '(':\\nPush index 0 onto the stack.\\nStack: [-1, 0]",
+          "keyPoints": [
+            "Index 1, '(':\\nPush index 1 onto the stack.\\nStack: [-1, 0, 1]",
+            "Index 0, '(':\\nPush index 0 onto the stack.\\nStack: [-1, 0]"
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "A sequence of push() and pop() operations.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "A sequence of push() and pop() operations.\n\nUsing an Array as a Stack\n\nFor more practice with problems that use a stack to manage the ordering of nested sequences, try:\n\nA stack being used to validate parentheses.\n\nArrays are frequently used to implement stacks, with the end of the array acting as the top of the stack.",
+          "keyPoints": [
+            "A sequence of push() and pop() operations.",
+            "For more practice with problems that use a stack to manage the ordering of nested sequences, try:",
+            "A stack being used to validate parentheses.",
+            "Arrays are frequently used to implement stacks, with the end of the array acting as the top of the stack.",
+            "The stack data structure is a collection of elements that follow the Last-In, First-Out (LIFO) principle, which means that the last element added to the stack is the first one to be removed."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": []
+              },
+              "highlight": [],
+              "explanation": "Visualization data available - refine steps",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "decode-string",
+      "title": "Decode String",
+      "description": "We then iterate over each character in the encoded string, handling each character as follows:",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "We then iterate over each character in the encoded string, handling each character as follows:",
+          "keyPoints": [
+            "We then iterate over each character in the encoded string, handling each character as follows:"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "largest-rectangle-in-histogram",
+      "title": "Largest Rectangle in Histogram",
+      "description": "To calculate the largest rectangle at each index, we need to know the index of the first shorter bar to both the left and the right of the current bar. The width of the rectangle is the difference between the two indices - 1, and the height is the height of the current bar.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "To calculate the largest rectangle at each index, we need to know the index of the first shorter bar to both the left and the right of the current bar. The width of the rectangle is the difference between the two indices - 1, and the height is the height of the current bar.\n\nMonotonically Increasing Stack\n\nLargest Rectangle at each Index\n\nWhen the stack is empty, we have processed all the indexes, and we return the maximum area.\n\nIndex of first shorter bar to left: 0. Index of first shorter bar to right: 4. Total area: 5 * (4 - 0 - 1) = 15",
+          "keyPoints": [
+            "Largest Rectangle at each Index",
+            "When the stack is empty, we have processed all the indexes, and we return the maximum area.",
+            "Index of first shorter bar to left: 0. Index of first shorter bar to right: 4. Total area: 5 * (4 - 0 - 1) = 15",
+            "Index of first shorter bar to left: 0. Index of first shorter bar to right: 2. Total area: 8 * (2 - 0 - 1) = 8"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "10,15",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "Given an array of integers, find the next greater element for each element in the array. The next greater element of an element x is the first element to the right of x that is greater than x. If there is no such element, then the next greater element is -1.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Given an array of integers, find the next greater element for each element in the array. The next greater element of an element x is the first element to the right of x that is greater than x. If there is no such element, then the next greater element is -1.\n\nWe start by initializing our stack and our results array, with each value in the results array initialized to -1. Our stack stores the indexes of the elements in the input array that have not yet found their next greater element.\n\nPushing indexes 0 and 1 onto the stack\n\nmonotonic decreasing stack\n\nProblem: Next Greater Element",
+          "keyPoints": [
+            "Pushing indexes 0 and 1 onto the stack",
+            "A montonically decreasing stack",
+            "Processing indexes for which 3 is the next greatest element"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "2, 1, 3, 2, 4, 3",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "1,6",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "1",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "description": "Valid Parentheses",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "",
+          "keyPoints": [],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "daily-temperatures",
+      "title": "Daily Temperatures",
+      "description": "After that is done, we push the current index onto the stack to indicate that we have not yet found the next greatest temperature for the current index.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "After that is done, we push the current index onto the stack to indicate that we have not yet found the next greatest temperature for the current index.\n\nIf the current temperature is less than the top temperature in the stack (of if the stack is empty), we push the current index onto the stack to indicate that we are waiting to find a greater temperature for that index.\n\nNext, we iterate over each index in the array. For each index, we get the current temperature of that index, and compare it to the temperature of the top index in the stack.\n\nA monotonically decreasing stack stores indices, where the temperature values at those indices decrease from bottom to top of the stack. When pushing an index onto this stack, the temperature at that index must be smaller than the temperatures at all other indices currently on the stack.\n\nWe first pop the top index from the stack and calculate the number of days we had to wait for that popped index to find a warmer temperature (current index minus the popped index), and store that number in the results array at the index of the popped element. To account for the fact that the current temperature might be the next greatest temperature for multiple indicies, we repeat this process in a while loop until the current temperature is less than the top temperature in the stack, or until the stack is empty.",
+          "keyPoints": [
+            "After that is done, we push the current index onto the stack to indicate that we have not yet found the next greatest temperature for the current index.",
+            "Next, we iterate over each index in the array. For each index, we get the current temperature of that index, and compare it to the temperature of the top index in the stack.",
+            "A montonically decreasing stack"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "0,2",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "4,7",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "13,23",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

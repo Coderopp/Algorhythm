@@ -1,0 +1,23 @@
+{
+  "total_topics": 17,
+  "total_lessons": 106,
+  "topics": {
+    "backtracking": 6,
+    "binary-search": 3,
+    "breadth-first-search": 11,
+    "depth-first-search": 21,
+    "dynamic-programming": 9,
+    "graphs": 3,
+    "greedy": 4,
+    "heap": 5,
+    "intervals": 6,
+    "learn": 1,
+    "linked-list": 6,
+    "matrices": 3,
+    "prefix-sum": 3,
+    "sliding-window": 7,
+    "stack": 7,
+    "trie": 3,
+    "two-pointers": 8
+  }
+}

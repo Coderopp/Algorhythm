@@ -1,0 +1,476 @@
+{
+  "topic": "breadth-first-search",
+  "total_lessons": 11,
+  "total_xp": 1100,
+  "lessons": [
+    {
+      "id": "graphs-overview",
+      "title": "Graphs Overview",
+      "description": "The animation shows how BFS traverses the graph represented by:",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "The animation shows how BFS traverses the graph represented by:\n\nRepeat steps 2 and 3 until the queue is empty.\n\nBFS on an Matrix (2D Grid)\n\nTo traverse a graph represented with an adjacency list with BFS:\n\nAdd the children of the node to the back of the queue (if they haven't been visited yet).",
+          "keyPoints": [
+            "The animation shows how BFS traverses the graph represented by:",
+            "Repeat steps 2 and 3 until the queue is empty.",
+            "To traverse a graph represented with an adjacency list with BFS:",
+            "Add the children of the node to the back of the queue (if they haven't been visited yet).",
+            "While the queue is not empty, remove the node at the front of the queue and add it to the set of visited nodes."
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "rightmost-node",
+      "title": "Rightmost Node",
+      "description": "Given the root of a binary tree, return the rightmost node at each level of the tree. The output should be a list containing only the values of those nodes.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Given the root of a binary tree, return the rightmost node at each level of the tree. The output should be a list containing only the values of those nodes.\n\nWe can start by initialize an empty list to store the rightmost nodes. Recall that in a level-order traversal, we first find the number of nodes at the current level, and then we use a for-loop to loop over all the nodes at that level. When the count of the for loop is equal to the number of nodes at the current level minus one, we know that the current node is the rightmost node at that level, so we can add it to our list.",
+          "keyPoints": [
+            "Given the root of a binary tree, return the rightmost node at each level of the tree. The output should be a list containing only the values of those nodes."
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "01-matrix",
+      "title": "01-Matrix",
+      "description": "breadth-first search (BFS)",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "breadth-first search (BFS)\n\n# setting the distances of cells with value 0 to 0 in the output grid\\noutput = [\\n    [-1, 0, -1],\\n    [0, -1, 0],\\n    [-1, -1, -1],\\n]\\n\n\nStep 1: Initialize the Queue\n\nqueue = [ (0, 0), (0, 2), (1, 1), (2, 0), (2, 2) ]\\n\n\nLet's look at example input grid to help visualize the process:",
+          "keyPoints": [
+            "# setting the distances of cells with value 0 to 0 in the output grid\\noutput = [\\n    [-1, 0, -1],\\n    [0, -1, 0],\\n    [-1, -1, -1],\\n]\\n",
+            "queue = [ (0, 0), (0, 2), (1, 1), (2, 0), (2, 2) ]\\n",
+            "Let's look at example input grid to help visualize the process:",
+            "# the coordinates of cells with value 0\\nqueue = [ (0, 1), (1, 0), (1, 2) ]\\n",
+            "output = [\\n    [1, 0, 1],\\n    [0, 1, 0],\\n    [1, -1, 1],\\n]\\n"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "1, 0, 1",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "0, 1, 0",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "1, 1, 1",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "1, 0, 1",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "0, 1, 0",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "maximum-width-of-binary-tree",
+      "title": "Maximum Width of Binary Tree",
+      "description": "Let's now breakdown how to calculate the width at each level of the binary tree. The width at each level is the number of nodes between the right-most and left-most nodes at that level.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Let's now breakdown how to calculate the width at each level of the binary tree. The width at each level is the number of nodes between the right-most and left-most nodes at that level.\n\nIn order to calculate the width at each level, we need to assign each node a \\",
+          "keyPoints": [
+            "Let's now breakdown how to calculate the width at each level of the binary tree. The width at each level is the number of nodes between the right-most and left-most nodes at that level.",
+            "In order to calculate the width at each level, we need to assign each node a \\"
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "minimum-knight-moves",
+      "title": "Minimum Knight Moves",
+      "description": "Step 1: Initialize the Queue and Visited Set",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Step 1: Initialize the Queue and Visited Set\n\nOtherwise, for each valid knight move from the current position that has not been visited before, we add that position to the queue, along with the number of moves required to reach that position (which is 1 + the current # of moves). We also mark the current cell as visited.\n\nSince this is a shortest path problem, we can use a breadth-first search (BFS) traversal\n\nStep 2: Perform BFS Traversal",
+          "keyPoints": [
+            "Step 1: Initialize the Queue and Visited Set",
+            "Since this is a shortest path problem, we can use a breadth-first search (BFS) traversal"
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "description": "breadth-first search (BFS)",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "breadth-first search (BFS)\n\nStep 1: Initialize BFS Queue and Count Fresh Oranges\n\nStep 2: BFS Traversal\n\nNext, we find all the oranges that will rot in the next minute. For each rotten orange in the BFS queue, we check if any of its neighbors are fresh oranges. If so, we turn the fresh orange into a rotten orange and add it to the queue to prepare for the next minute (shown in orange in the diagrams below). We also decrement the count of fresh oranges.\n\nQueue: [(0, 0), (1, 3)]",
+          "keyPoints": [
+            "Step 1: Initialize BFS Queue and Count Fresh Oranges",
+            "We can model this problem as a graph where each cell is a node and the edges are the connections between adjacent cells."
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "bus-routes",
+      "title": "Bus Routes",
+      "description": "This is easier to understand with an example. Let's walkthrough the solution with the following input:",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "This is easier to understand with an example. Let's walkthrough the solution with the following input:\n\nLet's walkthrough each step of the solution when we have the following input:\n\nStep 2: Initialize the Queue and Visited Set\n\nStep 1: Initialize the Graph\n\nNow, we're ready to perform the BFS traversal. We'll repeatedly dequeue from the front of the queue. Each time we dequeue, we get the current bus route and the number of bus routes taken so far, which are:",
+          "keyPoints": [
+            "This is easier to understand with an example. Let's walkthrough the solution with the following input:",
+            "Let's walkthrough each step of the solution when we have the following input:",
+            "Step 2: Initialize the Queue and Visited Set",
+            "routes = [[2, 3, 8], [3, 4, 7], [6, 4]]\\nsource = 2\\ntarget = 6\\n",
+            "queue = [(0, 1)]  # (index of bus route, number of bus routes taken)\\nvisited = { 0 } # set of visited bus routes\\n"
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "2, 3, 8",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "3, 4, 7",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 3,
+              "state": {
+                "array": "6, 4",
+                "pointers": {}
+              },
+              "highlight": [
+                2
+              ],
+              "explanation": "Step 3",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 4,
+              "state": {
+                "array": "0",
+                "pointers": {}
+              },
+              "highlight": [
+                3
+              ],
+              "explanation": "Step 4",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 5,
+              "state": {
+                "array": "3, 8, 9",
+                "pointers": {}
+              },
+              "highlight": [
+                4
+              ],
+              "explanation": "Step 5",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "level-order-sum",
+      "title": "Level Order Sum",
+      "description": "At each level, we can keep a running sum of the node's values at that level. Then, whenever we finish processing a level (the for-loop for that level finishes), then we can add the sum of the nodes to the output list.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "At each level, we can keep a running sum of the node's values at that level. Then, whenever we finish processing a level (the for-loop for that level finishes), then we can add the sum of the nodes to the output list.\n\nGiven the root of a binary tree, return the sum of the nodes at each level. The output should be a list containing the sum of the nodes at each level.",
+          "keyPoints": [
+            "Given the root of a binary tree, return the sum of the nodes at each level. The output should be a list containing the sum of the nodes at each level."
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "zigzag-level-order",
+      "title": "Zigzag Level Order",
+      "description": "Given the root of a binary tree, return the zigzag level-order traversal of its nodes' values.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "Given the root of a binary tree, return the zigzag level-order traversal of its nodes' values.\n\nThe output should be a list of lists containing the values of the nodes at each level. The first list should contain the value of the root, the second list should contain the values of the nodes at the second level from right to left, the third list should contain the values of the third level from left to right, and so on.",
+          "keyPoints": [
+            "Given the root of a binary tree, return the zigzag level-order traversal of its nodes' values."
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "breadth-first-search",
+      "title": "Breadth First Search",
+      "description": "We start by learning how breadth-first search traverses the nodes in a binary tree, which will teach us the fundamentals of the algorithm. We then look at practice problems that are best solved using BFS.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "quiz",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "We start by learning how breadth-first search traverses the nodes in a binary tree, which will teach us the fundamentals of the algorithm. We then look at practice problems that are best solved using BFS.\n\nby focusing on questions that are best solved using BFS rather than Depth-First Search\n\nWe then look at the two most common ways graphs are represented during the coding interview, and how to traverse both representations with BFS. Then we work through problems that give us practice with the different types of graph problems that are best solved using BFS.\n\nBreadth-First Search (BFS) is the next traversal algorithm we'll cover. BFS is a level-by-level traversal algorithm that starts at a node in a tree or graph-like data structure and processes all nodes at the current level before moving to the nodes at the next level.",
+          "keyPoints": [
+            "by focusing on questions that are best solved using BFS rather than Depth-First Search"
+          ],
+          "codeExample": null
+        }
+      }
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "While the queue is not empty, remove the node at the front of the queue and visit it.",
+      "difficulty": "medium",
+      "xp": 100,
+      "type": "theory",
+      "mobileOptimized": true,
+      "content": {
+        "theory": {
+          "explanation": "While the queue is not empty, remove the node at the front of the queue and visit it.\n\nAdd the children of the node to the back queue.\n\nRepeat steps 2 and 3 until the queue is empty, which means you've processed all nodes in the tree.\n\nThe state of the aglorithm after we have finished processing the nodes at the 2nd level of the tree.\n\nThe order in which BFS visits the nodes in a binary tree.",
+          "keyPoints": [
+            "While the queue is not empty, remove the node at the front of the queue and visit it.",
+            "Add the children of the node to the back queue.",
+            "Repeat steps 2 and 3 until the queue is empty, which means you've processed all nodes in the tree.",
+            "The state of the aglorithm after we have finished processing the nodes at the 2nd level of the tree.",
+            "The order in which BFS visits the nodes in a binary tree."
+          ],
+          "codeExample": null
+        },
+        "visualization": {
+          "type": "code-execution",
+          "code": "# Code extracted from RSC",
+          "language": "python",
+          "steps": [
+            {
+              "line": 1,
+              "state": {
+                "array": "2,7",
+                "pointers": {}
+              },
+              "highlight": [
+                0
+              ],
+              "explanation": "Step 1",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            },
+            {
+              "line": 2,
+              "state": {
+                "array": "4",
+                "pointers": {}
+              },
+              "highlight": [
+                1
+              ],
+              "explanation": "Step 2",
+              "mobileView": {
+                "compactArrayView": true,
+                "largeTouch": true,
+                "swipeEnabled": true
+              }
+            }
+          ],
+          "mobileOptimized": true,
+          "controls": {
+            "playPause": true,
+            "stepForward": true,
+            "stepBackward": true,
+            "reset": true,
+            "speed": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
