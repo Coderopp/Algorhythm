@@ -283,7 +283,7 @@ export const linked_listTopic: Topic = {
                         4
                     ],
                     "pointers": {
-                        "i": "3"
+                        "i": 3
                     },
                     "message": "Step 1",
                     "highlights": [
@@ -300,7 +300,7 @@ export const linked_listTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "i": "3"
+                        "i": 3
                     },
                     "message": "Step 2",
                     "highlights": [
@@ -316,7 +316,7 @@ export const linked_listTopic: Topic = {
                         2
                     ],
                     "pointers": {
-                        "i": "3"
+                        "i": 3
                     },
                     "message": "Step 3",
                     "highlights": [
@@ -330,7 +330,7 @@ export const linked_listTopic: Topic = {
                         2
                     ],
                     "pointers": {
-                        "i": "3"
+                        "i": 3
                     },
                     "message": "Step 4",
                     "highlights": [
@@ -344,7 +344,7 @@ export const linked_listTopic: Topic = {
                         7
                     ],
                     "pointers": {
-                        "i": "3"
+                        "i": 3
                     },
                     "message": "Step 5",
                     "highlights": [

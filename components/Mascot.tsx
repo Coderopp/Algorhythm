@@ -8,9 +8,12 @@ export type MascotState = "idle" | "thinking" | "success" | "error";
 interface MascotProps {
   state?: MascotState;
   className?: string;
+  emotion?: string; // friendly alias used by onboarding
+  message?: string; // optional speech/message to display near mascot
+  onClick?: () => void;
 }
 
-export function Mascot({ state = "idle", className = "" }: MascotProps) {
+export function Mascot({ state = "idle", className = "", emotion, message, onClick }: MascotProps) {
   const variants = {
     idle: {
       y: [0, -10, 0],
@@ -60,9 +63,12 @@ export function Mascot({ state = "idle", className = "" }: MascotProps) {
 
   return (
     <motion.div
-      className={`relative w-24 h-24 ${className}`}
+      className={`relative w-24 h-24 ${onClick ? 'cursor-pointer' : ''} ${className}`}
       animate={state}
       variants={variants}
+      onClick={onClick}
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
     >
       {/* Placeholder for "Py" the Red Panda */}
       <div className="w-full h-full bg-white rounded-full shadow-lg p-4 border-4 border-slate-100 flex items-center justify-center">
@@ -77,6 +83,17 @@ export function Mascot({ state = "idle", className = "" }: MascotProps) {
           className="absolute -top-4 -right-4 bg-white p-2 rounded-xl shadow-md border border-slate-200"
         >
           <span className="text-xl">🤔</span>
+        </motion.div>
+      )}
+
+      {/* Optional message bubble (explicit message prop) */}
+      {message && (
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-xl shadow-md border border-slate-200 max-w-xs text-sm text-slate-700"
+        >
+          {message}
         </motion.div>
       )}
     </motion.div>

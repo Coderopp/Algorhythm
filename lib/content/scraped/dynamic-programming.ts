@@ -216,7 +216,7 @@ export const dynamic_programmingTopic: Topic = {
                         8
                     ],
                     "pointers": {
-                        "i": "1"
+                        "i": 1
                     },
                     "message": "Step 1",
                     "highlights": [

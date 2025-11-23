@@ -251,7 +251,7 @@ export const heapTopic: Topic = {
                         9
                     ],
                     "pointers": {
-                        "i": "4"
+                        "i": 4
                     },
                     "message": "Step 1",
                     "highlights": [
@@ -266,7 +266,7 @@ export const heapTopic: Topic = {
                         9
                     ],
                     "pointers": {
-                        "i": "4"
+                        "i": 4
                     },
                     "message": "Step 2",
                     "highlights": [
@@ -281,7 +281,7 @@ export const heapTopic: Topic = {
                         8
                     ],
                     "pointers": {
-                        "i": "4"
+                        "i": 4
                     },
                     "message": "Step 3",
                     "highlights": [
@@ -296,7 +296,7 @@ export const heapTopic: Topic = {
                         8
                     ],
                     "pointers": {
-                        "i": "4"
+                        "i": 4
                     },
                     "message": "Step 4",
                     "highlights": [

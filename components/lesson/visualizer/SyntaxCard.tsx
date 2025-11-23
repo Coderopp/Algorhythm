@@ -18,15 +18,20 @@ export function SyntaxCard({ title, explanation, code, onNext }: SyntaxCardProps
   // Extract expected output from code comments
   const getExpectedOutput = () => {
     const outputComments: string[] = [];
-    const lines = code.split('\n');
+    const lines = (code || "").split('\n');
     
     for (const line of lines) {
       // Look for comments with Output: or # Output
-      const outputMatch = line.match(/# Output: (.+)/) || line.match(/# (.+)/) && line.includes('Output:');
+      let outputMatch: RegExpMatchArray | null = line.match(/# Output: (.+)/);
+      if (!outputMatch) {
+        const m = line.match(/# (.+)/);
+        if (m && line.includes('Output:')) outputMatch = m;
+      }
+
       if (outputMatch && outputMatch[1]) {
         outputComments.push(outputMatch[1].trim());
       }
-      
+
       // Look for print statements to simulate output
       const printMatch = line.match(/print\((.+?)\)/);
       if (printMatch && !line.includes('# Output:')) {

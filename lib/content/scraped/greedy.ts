@@ -87,7 +87,7 @@ export const greedyTopic: Topic = {
                         0
                     ],
                     "pointers": {
-                        "i": "2"
+                        "i": 2
                     },
                     "message": "Step 1",
                     "highlights": [
@@ -100,7 +100,7 @@ export const greedyTopic: Topic = {
                         0
                     ],
                     "pointers": {
-                        "i": "2"
+                        "i": 2
                     },
                     "message": "Step 2",
                     "highlights": [
@@ -114,7 +114,7 @@ export const greedyTopic: Topic = {
                         5
                     ],
                     "pointers": {
-                        "i": "2"
+                        "i": 2
                     },
                     "message": "Step 3",
                     "highlights": [
@@ -127,7 +127,7 @@ export const greedyTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "i": "2"
+                        "i": 2
                     },
                     "message": "Step 4",
                     "highlights": [
@@ -140,7 +140,7 @@ export const greedyTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "i": "2"
+                        "i": 2
                     },
                     "message": "Step 5",
                     "highlights": [

@@ -148,7 +148,7 @@ export const backtrackingTopic: Topic = {
                         3
                     ],
                     "pointers": {
-                        "index": "2"
+                        "index": 2
                     },
                     "message": "Step 1",
                     "highlights": [
@@ -161,7 +161,7 @@ export const backtrackingTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "index": "2"
+                        "index": 2
                     },
                     "message": "Step 2",
                     "highlights": [
@@ -174,7 +174,7 @@ export const backtrackingTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "index": "2"
+                        "index": 2
                     },
                     "message": "Step 3",
                     "highlights": [
@@ -187,7 +187,7 @@ export const backtrackingTopic: Topic = {
                         1
                     ],
                     "pointers": {
-                        "index": "2"
+                        "index": 2
                     },
                     "message": "Step 4",
                     "highlights": [
@@ -200,7 +200,7 @@ export const backtrackingTopic: Topic = {
                         2
                     ],
                     "pointers": {
-                        "index": "2"
+                        "index": 2
                     },
                     "message": "Step 5",
                     "highlights": [

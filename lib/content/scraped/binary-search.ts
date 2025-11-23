@@ -136,7 +136,7 @@ export const binary_searchTopic: Topic = {
                         2
                     ],
                     "pointers": {
-                        "left": "0"
+                        "left": 0
                     },
                     "message": "Step 1",
                     "highlights": [
@@ -155,7 +155,7 @@ export const binary_searchTopic: Topic = {
                         2
                     ],
                     "pointers": {
-                        "left": "0"
+                        "left": 0
                     },
                     "message": "Step 2",
                     "highlights": [
